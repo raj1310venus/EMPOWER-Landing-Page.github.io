@@ -429,7 +429,7 @@ else{
   
   function displayResult() 
     {
-        var score = $('<p>',{id: 'question'});
+        var score = $('<h3>',{id: 'question'});
         var correct = 0;
         for (var i = 0; i < selectOptions.length; i++) 
         {
