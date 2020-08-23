@@ -1,0 +1,2883 @@
+<html>
+
+<title> FAQ Page </title>
+
+	<head>
+
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!-- font awesome CDN -->
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- google font cdn -->
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+ 		<!--Countdown timer CSS code -->
+		<link rel="stylesheet" type="text/css" href="countdown.css">
+
+		<!-- Full page CSS code -->
+		<link rel="stylesheet" type="text/css" href="FAQ.css">
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+		<!-- countdown js code -->
+		<script type="text/javascript" src="countdown.js"></script>
+
+		<!-- spinwheel cdn's -->
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	      <script src="https://d3js.org/d3.v3.min.js"></script>
+	      <link rel="stylesheet" href="main.css"> 
+	      <link rel="stylesheet" href="quiz.css">
+
+
+	</head>
+
+
+<body style="background-color: #F5F7FA;">
+
+	<header>
+		  <div class="wrapHead">
+		    <div id="brand">
+		      <h1>EMPOWER</h1>
+		    </div>
+		    <nav id="header_nav">
+		      <ul>
+		        <li id="header_nav_li"><a href="#home" class="scroll"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>&nbsp;
+		        <li id="header_nav_li"><a href="#spinwheel" class="scroll"><i class="fa fa-cogs" aria-hidden="true"></i> Spin Wheel</a></li>&nbsp;
+		        <li id="header_nav_li"><a href="#introductionvideo" class="scroll"><i class="fa fa-video-camera" aria-hidden="true"></i> Introduction Video</a></li>&nbsp;
+		        <li id="header_nav_li"><a href="#headerimg" class="scroll"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ Section</a></li>&nbsp;
+		        <li id="header_nav_li"><a href="walloffame.html" class="walloffame" target="_blank"><i class="fa fa-line-chart" aria-hidden="true"></i> Wall of fame</a></li>
+		      </ul>
+		    </nav>
+		  </div>
+	</header>
+
+	<div style="background-color: #F5F7FA;">
+
+
+	<div id="home" style="margin-top: 10%;">
+		<center><h1>Countdown Begins...</h1></center>	
+	</div>
+
+	<!-- countdown div element -->
+	<div id="countdownbg" style="height: 50%; display: flex; justify-content: center;">
+		<div id="countdown1" class="clock1"></div>
+	</div>
+
+	<!-- Spin Wheel html -->
+
+	<div class="container-fluid" id="spinwheel" style="padding-bottom: 50px; margin-left: 0px;">
+        <div class="row">
+           
+            <div  class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <img id="img1" src="Spinwheel.png">
+                <div id="chart">
+                    <img id="img2" src="pointerr.png">
+                     <img id="img3" src="spincenter.png">  
+                     <img id="rotateimg1" src="alternate-withyellow.png">
+                     <img id="rotateimg2" src="wihtoutyellow.png">
+
+                </div>
+              
+              <div>
+                  <button id="btn2" onclick="spin()"><img id="img4" src="taptospin.png"> </button>
+              </div>
+            </div>
+            <div class="class=col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                      <div id="container2">
+                        <div id="Question">
+                          </button> <h3 id="p1"></h3><button id="btn1" onclick="start()"> 
+                        </div>
+                      </div>
+                        
+                    </div>                    
+                </div>                    
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="container1">
+                                <h1 id="heading">BADGES</h1>
+                                <br/>
+                            <div id="quiz"></div>
+                            <div class="buttonquiz" id="nextquiz"><a id="demoid" href="#">Next</a></div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end of spin wheel html -->
+	<br>
+	<!-- embedding video in div element -->
+	<div id="introductionvideo" class="row" style="background-color:black;">
+		<div class="col">
+			<h1 style="color: white; margin-top: 10%; margin-left: 8%;">EMPOWER Introduction <br> video</h1>
+			<p style="color: white; margin-left: 8%; color: white;">EMPOWER is a Gamification tool or platform used for applying game mechanics to non-game contexts in order to boost engagement and successful end-results. Common use cases include demonstrate better completion rates, Badges, leaderboards draw diverse learner profiles, e-learning, employee engagement, and performance management.</p>
+			
+		</div>
+
+		<div class="col">
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item" src="https://web.microsoftstream.com/embed/video/b30c3516-6279-468c-898c-bd9427fa0e87?autoplay=true&amp;showinfo=false&amp;st=1" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container" id="headerimg">
+
+		<img  src="headerimg1.svg" style="height: auto; width:auto; margin-top: 95px; background-size: cover;">
+		<img class="search" src="search1.gif">
+	</div>
+
+	<br>
+
+	</div>
+	
+	
+	<div class="container">
+	
+	<div class="row" style="margin-top: 100px;">
+
+		<div class="col-4 shadow-lg p-4 mb-1"> 
+	
+			<h3 style="text-align:center;  margin-top: -200px;"> <h3 id="faq">Frequently Asked Questions - </h3> <h1 style="background: linear-gradient(to left, #48dad0 0%, #fcdb7f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline;"><b id="emp">EmPower</b></h1> </h3>  
+			 
+
+		</div>
+		
+	  <div class="col-8">
+		<div class="accordion" id="accordionExample">
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingOne">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: black">
+					 What is EmPower?
+				  
+				</button>
+			  </h2>
+			</div>
+
+			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+			  <div class="card-body">
+				EmPower, “Employee Power”, is a web-based employee engagement platform designed to leverage
+				power of Gamification to enhance user engagement at the workplace. EmPower in inception phase seeks to bring
+				in an engaging experience for IDO employees (Data Specialist/Map Modeler) eventually planned to expand and
+				scale in near future. 
+
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingTwo">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: black">
+				  Why EmPower? What’s the objective of deploying such platform?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+			  <div class="card-body">
+				The objective of EmPower is to meaningfully engage people and motivate them to drive key business
+				objectives in line with HERE ways of working. EmPower enables to recognize, socialize & celebrate every
+				small/incremental success of individuals using an open & transparent platform.
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingThree">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: black">
+				  Why leverage Gamification to power EmPower Platform?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			  <div class="card-body">
+					The power of gamification has universally proven to tap into top three employee motivators (Recognition,
+					sense of accomplishment, reward) to improve overall engagement. EmPower, a gamified platform, helps employee
+					to own their everyday work-related decisions/actions and provides a strong platform to manage their work and
+					share their accomplishments. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingFour">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: black">
+				  What is Gamification?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+			  <div class="card-body">
+					Gamification is integration of game mechanics (viz. Point, Badges, Leaderboard) into a non-game-based
+					environment viz. workplace. It deploys the data-driven techniques based on user behavior and engages people to
+					perform their tasks, in more fun-filled way. 
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingFive">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: black">
+				  What are the key features of EmPower Platform?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+			  <div class="card-body">
+				An integrated Rule-based engine that creates gamified experience (Points, Badges, Leaderboard) is a core
+				feature of EmPower. There are other features viz. Quiz & Events built-in to engage people. Additional features are
+				planned for deployment in future, stay tuned!
+
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingSix">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: black">
+				  Why EmPower is positioned as platform? 
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+			  <div class="card-body">
+				EmPower is a plug-and-play ‘system aggregator’ that allows multiple parties to connect & integrate their
+				systems (Bearing, MyWorkAnalyzer, How-To, HERE University, LinkedIn Learnings etc) to co-create & generate
+				business value. The architecture is designed to onboard, curate new business imperatives in a seamless manner.
+
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" style="background-color: #F5F7FA">
+			<div class="card-header" id="headingSeven">
+			  <h2 class="mb-0">
+				<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color: black">
+				   What does ‘Imperatives’ mean in context of EmPower?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+			  <div class="card-body">
+				Imperatives in context of EmPower platform implies to outcome-based, business critical indicators that
+				positively impacts customer value & employee engagement. The first set of business imperative is derived from
+				Bearing, MyWorkAnalyzer, HERE University, LinkedIn Learnings, How-To, CI systems. This may evolve and expand
+				in future.
+
+
+			  </div>
+			</div>
+		  </div>
+		  
+		</div>
+	</div>
+
+</div> <!-- end of row -->
+
+</div>
+
+
+
+	&nbsp; &nbsp; &nbsp;
+	<br>
+	<br>
+	<br>
+	
+<div class="container">
+	<nav>
+	  <div class="nav nav-tabs" id="nav-tab" role="tablist" >
+	    <a class="nav-item nav-link active"  id="nav-home-tab" data-toggle="tab"  href="#nav-home" role="tab"
+	      aria-controls="nav-home" aria-selected="true" style=" background-color: #F5F7FA;" ><h5>Components</h5></a>
+	    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+	      aria-controls="nav-profile" aria-selected="false" style=" background-color: #F5F7FA"><h5>Features</h5></a>
+
+	  </div>
+	</nav>
+	<div class="tab-content" id="nav-tabContent">
+
+	  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+	  		
+	  		<div class="row">
+
+			    <div class="col-sm">
+			    	&nbsp;
+			    	<div id="GQ">
+			      		<center> <img src="General_Question.svg"> </center>
+			      	</div>
+			      	&nbsp;
+			      	<div class="display-4" style="font-size: 30px;">
+			      	<center id="fsize"> General Questions </center>
+			      	</div>
+			      	&nbsp;
+
+			      	<div class="accordion" id="accordionExample1">
+
+			      		<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading1">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1" style="color: black">
+								   What is EmPower?
+								</button>
+							  </h2>
+							</div>
+
+							<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample1">
+							  <div class="card-body">
+								EmPower, “Employee Power”, is a web-based employee engagement platform designed to leverage
+								power of Gamification to enhance user engagement at the workplace. EmPower in inception phase seeks to bring
+								in an engaging experience for IDO employees (Data Specialist/Map Modeler) eventually planned to expand and
+								scale in near future. 
+
+			  					</div>
+							</div>
+		 			 	</div>
+
+		 			 	<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading2">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color: black">
+								   What is Gamification?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample1">
+							  <div class="card-body">
+								Gamification is integration of game mechanics (viz. Point, Badges, Leaderboard) into a non-game-based environment viz. workplace. 
+								It deploys the data-driven techniques based on user behavior and engages people to perform their tasks, in more fun-filled way.
+							  </div>
+							</div>
+						 </div>
+
+						 <div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading3">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="color: black">
+								   Why leverage Gamification to power EmPower Platform?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample1">
+							  <div class="card-body">
+									The power of gamification has universally proven to tap into top three employee motivators (Recognition,
+									sense of accomplishment, reward) to improve overall engagement. EmPower, a gamified platform, helps employee
+									to own their everyday work-related decisions/actions and provides a strong platform to manage their work and
+									share their accomplishments. 
+							  </div>
+							</div>
+						  </div>
+			      		
+			      	</div> <!-- end of collapse function -->
+			      	&nbsp;
+					
+						<!-- Button trigger modal -->
+						<center><button id="v1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						  <b> View All </b>
+						</button></center>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+						  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+							<div class="modal-content" style="background-color: #F5F7FA">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="mod1">General Questions</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  
+							  <div class="modal-body">
+							  
+									<div class="accordion" id="accordionmod1">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapse1" aria-expanded="true" aria-controls="modcollapse1" style="color: black">
+												   What is EmPower?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="modcollapse1" class="collapse" aria-labelledby="modheading1" data-parent="#accordionmod1">
+											  <div class="card-body">
+												EmPower, “Employee Power”, is a web-based employee engagement platform designed to leverage
+												power of Gamification to enhance user engagement at the workplace. EmPower in inception phase seeks to bring
+												in an engaging experience for IDO employees (Data Specialist/Map Modeler) eventually planned to expand and
+												scale in near future. 
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse2" aria-expanded="false" aria-controls="modcollapse2" style="color: black">
+												   Why EmPower? What’s the objective of deploying such platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse2" class="collapse" aria-labelledby="modheading2" data-parent="#accordionmod1">
+											  <div class="card-body">
+												The objective of EmPower is to meaningfully engage people and motivate them to drive key business
+												objectives in line with HERE ways of working. EmPower enables to recognize, socialize & celebrate every
+												small/incremental success of individuals using an open & transparent platform.
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse3" aria-expanded="false" aria-controls="modcollapse3" style="color: black">
+												   Why leverage Gamification to power EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse3" class="collapse" aria-labelledby="modheading3" data-parent="#accordionmod1">
+											  <div class="card-body">
+													The power of gamification has universally proven to tap into top three employee motivators (Recognition,
+													sense of accomplishment, reward) to improve overall engagement. EmPower, a gamified platform, helps employee
+													to own their everyday work-related decisions/actions and provides a strong platform to manage their work and
+													share their accomplishments. 
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading4">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse4" aria-expanded="false" aria-controls="modcollapse4" style="color: black">
+												   What is Gamification?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse4" class="collapse" aria-labelledby="modheading4" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Gamification is integration of game mechanics (viz. Point, Badges, Leaderboard) into a non-game-based environment viz. workplace. 
+													It deploys the data-driven techniques based on user behavior and engages people to perform their tasks, in more fun-filled way.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading5">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse5" aria-expanded="false" aria-controls="modcollapse5" style="color: black">
+												   What are the key features of EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse5" class="collapse" aria-labelledby="modheading5" data-parent="#accordionmod1">
+											  <div class="card-body">
+													An integrated Rule-based engine that creates gamified experience (Points, Badges, Leaderboard) is a core feature of EmPower. 
+													There are other features viz. Quiz & Events built-in to engage people. 
+													Additional features are planned for deployment in future, stay tuned!
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading6">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse6" aria-expanded="false" aria-controls="modcollapse6" style="color: black">
+												   Why EmPower is positioned as platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse6" class="collapse" aria-labelledby="modheading6" data-parent="#accordionmod1">
+											  <div class="card-body">
+													EmPower is a plug-and-play ‘system aggregator’ that allows multiple parties to connect & integrate their systems 
+													(Bearing, MyWorkAnalyzer, How-To, HERE University, LinkedIn Learnings etc) to co-create & generate business value. 
+													The architecture is designed to onboard, curate new business imperatives in a seamless manner.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading7">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse7" aria-expanded="false" aria-controls="modcollapse7" style="color: black">
+												   What does ‘Imperatives’ mean in context of EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse7" class="collapse" aria-labelledby="modheading7" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Imperatives in context of EmPower platform implies to outcome-based, business critical indicators that positively impacts customer value & employee engagement. 
+													The first set of business imperative is derived from Bearing, MyWorkAnalyzer, HERE University, LinkedIn Learnings, How-To, CI systems. 
+													This may evolve and expand in future.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading8">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse8" aria-expanded="false" aria-controls="modcollapse8" style="color: black">
+												   Will my operational KPI’s (i.e. Quality, Efficiency, Speed, etc.) linked to EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse8" class="collapse" aria-labelledby="modheading8" data-parent="#accordionmod1">
+											  <div class="card-body">
+													EmPower is ONLY focused towards driving outcome-based individual traits that inspires positive behavior, values and culture alignment in HERE Way. 
+													Output based KPI’s (i.e. Quality, Efficiency, Speed, etc.) are already driven and managed through our well established, robust performance management system (PMS).
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading9">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse9" aria-expanded="false" aria-controls="modcollapse9" style="color: black">
+												   What is the source of the data to reflect my progress on these imperatives?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse9" class="collapse" aria-labelledby="modheading9" data-parent="#accordionmod1">
+											  <div class="card-body">
+													The data is fetched from multiple data reporting systems; 
+													streamed through a GCO managed Business Intelligence data repository; 
+													displayed on EmPower dashboards by means of APIs in automated mode.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading10">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse10" aria-expanded="false" aria-controls="modcollapse10" style="color: black">
+												   Will there be program specific Imperatives?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse10" class="collapse" aria-labelledby="modheading10" data-parent="#accordionmod1">
+											  <div class="card-body">
+													At this point of time there are no program specific Imperatives.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading11">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse11" aria-expanded="false" aria-controls="modcollapse11" style="color: black">
+												   Where can I find Rules of the Game?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse11" class="collapse" aria-labelledby="modheading11" data-parent="#accordionmod1">
+											  <div class="card-body">
+													You can find Rules of the Game under ‘Rules of the Road’ section on EmPower landing page.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading12">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse12" aria-expanded="false" aria-controls="modcollapse12" style="color: black">
+												   Can the Rules of the Game change at later point of time?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse12" class="collapse" aria-labelledby="modheading12" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Yes, the Rules of the Game may change as the set benchmark evolves. Game administrator will share advance notifications before any change.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading13">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse13" aria-expanded="false" aria-controls="modcollapse13" style="color: black">
+												   Would the change in the rules potentially reset the existing earned points/badges?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse13" class="collapse" aria-labelledby="modheading13" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Any change in rules will not impact the existing earned points and badges. 
+													These earned points/badges would be carried forwarded even if the rules are modified based on new set benchmarks. 
+													However, points earned during soft launch will get reset before official launch.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading14">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse14" aria-expanded="false" aria-controls="modcollapse14" style="color: black">
+												   Do we have any theme-based Game concept deployed on EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse14" class="collapse" aria-labelledby="modheading14" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Yes, for first version, we have a Car Race concept in line with Grand Prix theme (Laps Progression) along with SEA Level of Autonomous car (Levels Change). 
+													The user progression in the game is based on the rules indicated as per ‘Rules of the Road’.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading15">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse15" aria-expanded="false" aria-controls="modcollapse15" style="color: black">
+												   Are we micro-managing work through EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse15" class="collapse" aria-labelledby="modheading15" data-parent="#accordionmod1">
+											  <div class="card-body">
+													EmPower enables people to self-manage and govern their work-related decisions/actions in more smart and transparent manner. 
+													The platform instantly recognizes positive actions of people based on well-defined, preset triggers. 
+													The users are not bound to follow the triggers as there are no compulsions or negative markings for non-compliant actions.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading16">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse16" aria-expanded="false" aria-controls="modcollapse16" style="color: black">
+												   Will this platform replace our existing Performance Evaluation System in any way?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse16" class="collapse" aria-labelledby="modheading16" data-parent="#accordionmod1">
+											  <div class="card-body">
+													No, the performance evaluation process will continue to be functional and governed the way it is happening now.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading17">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse17" aria-expanded="false" aria-controls="modcollapse17" style="color: black">
+												   Can managers/PLs see statistics for their team in EMPOWER platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse17" class="collapse" aria-labelledby="modheading17" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Currently this is not available. 
+													At later stage, we will have visualization tools/dashboards to present anonymous/aggregated information to managers/leaders with certain access restrictions.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading18">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse18" aria-expanded="false" aria-controls="modcollapse18" style="color: black">
+												   How to refer to latest Rules of the Road/EmPower Tool Guidelines?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse18" class="collapse" aria-labelledby="modheading18" data-parent="#accordionmod1">
+											  <div class="card-body">
+													The latest and most updated Rules of the road is available on EmPower landing page in header section. 
+													Also, it would be shared via other Communication channels too as and when rules changes.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheading19">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapse19" aria-expanded="false" aria-controls="modcollapse19" style="color: black">
+												   How the rules are defined & governed for Soft Launch period?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse19" class="collapse" aria-labelledby="modheading19" data-parent="#accordionmod1">
+											  <div class="card-body">
+													Keeping flexibility of people in mind in a Work from home setup, current rules are relaxed a bit for soft launch period. 
+													Soft launch is a beta release for select users operating from home and this Launch is meant for experimentation & engagement purpose. 
+													The points, badges & levels will get reset with a prior intimation.
+											  </div>
+											</div>
+										  </div>
+			      		
+									</div> <!-- end of collapse function -->
+								
+								
+							  </div> <!-- end of modal body -->
+							  
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+
+
+			    </div> <!-- end of first col-sm -->
+
+				<div class="col-sm">
+			    	&nbsp;
+			    	<div id="F1">
+			      		<center> <img src="Features.svg"> </center>
+			      	</div>
+			      	&nbsp;
+			      	<div class="display-4" style="font-size: 30px;">
+			      	<center id="fsize"> Features </center>
+			      	</div>
+			      	&nbsp;
+
+			      	<div class="accordion" id="accordionExample2">
+
+			      		<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading4">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4" style="color: black">
+								   Who is SAM?
+								</button>
+							  </h2>
+							</div>
+
+							<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample2">
+							  <div class="card-body">
+								SAM is system automated messages which provides information related to your earned points, earned badges and team members activities. 
+								Sam also displays/Nudges you regarding the imperatives that you should do to earn badge. 
+
+			  					</div>
+							</div>
+		 			 	</div>
+
+		 			 	<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading5">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="color: black">
+								   Who is Emmy?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample2">
+							  <div class="card-body">
+								Emmy Is engagement manager who will broadcast messages, post events and quizzes for users.
+							  </div>
+							</div>
+						 </div>
+
+						 <div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading6">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="color: black">
+								  Can we add your own personal comment on my feed?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample2">
+							  <div class="card-body">
+									As of now you have pre-defined responses that you can use for commenting.
+							  </div>
+							</div>
+						  </div>
+			      		
+			      	</div> <!-- end of collapse function -->
+			      	&nbsp;
+					
+					
+					<!-- Button trigger modal second tab FEATURE-->
+						<center><button id="v2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modtab2">
+						  <b>View All</b>
+						</button></center>
+
+						<!-- Modal -->
+						<div class="modal fade" id="modtab2" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+						  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+							<div class="modal-content" style="background-color: #F5F7FA">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="mod1">Features</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  
+							  <div class="modal-body">
+							  
+									<div class="accordion" id="accordionmod2">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapsef1" aria-expanded="true" aria-controls="modcollapsef1" style="color: black">
+												   What is EmPower?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="modcollapsef1" class="collapse" aria-labelledby="modheadingf1" data-parent="#accordionmod2">
+											  <div class="card-body">
+												EmPower, “Employee Power”, is a web-based employee engagement platform designed to leverage
+												power of Gamification to enhance user engagement at the workplace. EmPower in inception phase seeks to bring
+												in an engaging experience for IDO employees (Data Specialist/Map Modeler) eventually planned to expand and
+												scale in near future. 
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef2" aria-expanded="false" aria-controls="modcollapsef2" style="color: black">
+												   Why EmPower? What’s the objective of deploying such platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef2" class="collapse" aria-labelledby="modheadingf2" data-parent="#accordionmod2">
+											  <div class="card-body">
+												The objective of EmPower is to meaningfully engage people and motivate them to drive key business
+												objectives in line with HERE ways of working. EmPower enables to recognize, socialize & celebrate every
+												small/incremental success of individuals using an open & transparent platform.
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef3" aria-expanded="false" aria-controls="modcollapsef3" style="color: black">
+												   Why leverage Gamification to power EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef3" class="collapse" aria-labelledby="modheadingf3" data-parent="#accordionmod2">
+											  <div class="card-body">
+													The power of gamification has universally proven to tap into top three employee motivators (Recognition,
+													sense of accomplishment, reward) to improve overall engagement. EmPower, a gamified platform, helps employee
+													to own their everyday work-related decisions/actions and provides a strong platform to manage their work and
+													share their accomplishments. 
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf4">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef4" aria-expanded="false" aria-controls="modcollapsef4" style="color: black">
+												   What is Gamification?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef4" class="collapse" aria-labelledby="modheadingf4" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Gamification is integration of game mechanics (viz. Point, Badges, Leaderboard) into a non-game-based environment viz. workplace. 
+													It deploys the data-driven techniques based on user behavior and engages people to perform their tasks, in more fun-filled way.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf5">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef5" aria-expanded="false" aria-controls="modcollapsef5" style="color: black">
+												   What are the key features of EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef5" class="collapse" aria-labelledby="modheadingf5" data-parent="#accordionmod2">
+											  <div class="card-body">
+													An integrated Rule-based engine that creates gamified experience (Points, Badges, Leaderboard) is a core feature of EmPower. 
+													There are other features viz. Quiz & Events built-in to engage people. 
+													Additional features are planned for deployment in future, stay tuned!
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf6">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef6" aria-expanded="false" aria-controls="modcollapsef6" style="color: black">
+												   Why EmPower is positioned as platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef6" class="collapse" aria-labelledby="modheadingf6" data-parent="#accordionmod2">
+											  <div class="card-body">
+													EmPower is a plug-and-play ‘system aggregator’ that allows multiple parties to connect & integrate their systems 
+													(Bearing, MyWorkAnalyzer, How-To, HERE University, LinkedIn Learnings etc) to co-create & generate business value. 
+													The architecture is designed to onboard, curate new business imperatives in a seamless manner.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf7">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef7" aria-expanded="false" aria-controls="modcollapsef7" style="color: black">
+												   What does ‘Imperatives’ mean in context of EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef7" class="collapse" aria-labelledby="modheadingf7" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Imperatives in context of EmPower platform implies to outcome-based, business critical indicators that positively impacts customer value & employee engagement. 
+													The first set of business imperative is derived from Bearing, MyWorkAnalyzer, HERE University, LinkedIn Learnings, How-To, CI systems. 
+													This may evolve and expand in future.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf8">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef8" aria-expanded="false" aria-controls="modcollapsef8" style="color: black">
+												   Will my operational KPI’s (i.e. Quality, Efficiency, Speed, etc.) linked to EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef8" class="collapse" aria-labelledby="modheadingf8" data-parent="#accordionmod2">
+											  <div class="card-body">
+													EmPower is ONLY focused towards driving outcome-based individual traits that inspires positive behavior, values and culture alignment in HERE Way. 
+													Output based KPI’s (i.e. Quality, Efficiency, Speed, etc.) are already driven and managed through our well established, robust performance management system (PMS).
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf9">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef9" aria-expanded="false" aria-controls="modcollapsef9" style="color: black">
+												   What is the source of the data to reflect my progress on these imperatives?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef9" class="collapse" aria-labelledby="modheadingf9" data-parent="#accordionmod2">
+											  <div class="card-body">
+													The data is fetched from multiple data reporting systems; 
+													streamed through a GCO managed Business Intelligence data repository; 
+													displayed on EmPower dashboards by means of APIs in automated mode.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf10">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef10" aria-expanded="false" aria-controls="modcollapsef10" style="color: black">
+												   Will there be program specific Imperatives?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef10" class="collapse" aria-labelledby="modheadingf10" data-parent="#accordionmod2">
+											  <div class="card-body">
+													At this point of time there are no program specific Imperatives.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf11">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef11" aria-expanded="false" aria-controls="modcollapsef11" style="color: black">
+												   Where can I find Rules of the Game?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef11" class="collapse" aria-labelledby="modheadingf11" data-parent="#accordionmod2">
+											  <div class="card-body">
+													You can find Rules of the Game under ‘Rules of the Road’ section on EmPower landing page.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf12">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef12" aria-expanded="false" aria-controls="modcollapsef12" style="color: black">
+												   Can the Rules of the Game change at later point of time?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef12" class="collapse" aria-labelledby="modheadingf12" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Yes, the Rules of the Game may change as the set benchmark evolves. Game administrator will share advance notifications before any change.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf13">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef13" aria-expanded="false" aria-controls="modcollapsef13" style="color: black">
+												   Would the change in the rules potentially reset the existing earned points/badges?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef13" class="collapse" aria-labelledby="modheadingf13" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Any change in rules will not impact the existing earned points and badges. 
+													These earned points/badges would be carried forwarded even if the rules are modified based on new set benchmarks. 
+													However, points earned during soft launch will get reset before official launch.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf14">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef14" aria-expanded="false" aria-controls="modcollapsef14" style="color: black">
+												   Do we have any theme-based Game concept deployed on EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapse1f4" class="collapse" aria-labelledby="modheadingf14" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Yes, for first version, we have a Car Race concept in line with Grand Prix theme (Laps Progression) along with SEA Level of Autonomous car (Levels Change). 
+													The user progression in the game is based on the rules indicated as per ‘Rules of the Road’.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf15">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef15" aria-expanded="false" aria-controls="modcollapsef15" style="color: black">
+												  Are we micro-managing work through EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef15" class="collapse" aria-labelledby="modheadingf15" data-parent="#accordionmod2">
+											  <div class="card-body">
+													EmPower enables people to self-manage and govern their work-related decisions/actions in more smart and transparent manner. 
+													The platform instantly recognizes positive actions of people based on well-defined, preset triggers. 
+													The users are not bound to follow the triggers as there are no compulsions or negative markings for non-compliant actions.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf16">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef16" aria-expanded="false" aria-controls="modcollapsef16" style="color: black">
+												  Will this platform replace our existing Performance Evaluation System in any way?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef16" class="collapse" aria-labelledby="modheadingf16" data-parent="#accordionmod2">
+											  <div class="card-body">
+													No, the performance evaluation process will continue to be functional and governed the way it is happening now.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf17">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef17" aria-expanded="false" aria-controls="modcollapsef17" style="color: black">
+												  Can managers/PLs see statistics for their team in EMPOWER platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef17" class="collapse" aria-labelledby="modheadingf17" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Currently this is not available. 
+													At later stage, we will have visualization tools/dashboards to present anonymous/aggregated information to managers/leaders with certain access restrictions.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf18">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef18" aria-expanded="false" aria-controls="modcollapsef18" style="color: black">
+												  How to refer to latest Rules of the Road/EmPower Tool Guidelines?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef18" class="collapse" aria-labelledby="modheadingf18" data-parent="#accordionmod2">
+											  <div class="card-body">
+													The latest and most updated Rules of the road is available on EmPower landing page in header section. 
+													Also, it would be shared via other Communication channels too as and when rules changes.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingf19">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsef19" aria-expanded="false" aria-controls="modcollapsef19" style="color: black">
+												  How the rules are defined & governed for Soft Launch period?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapsef19" class="collapse" aria-labelledby="modheadingf19" data-parent="#accordionmod2">
+											  <div class="card-body">
+													Keeping flexibility of people in mind in a Work from home setup, current rules are relaxed a bit for soft launch period. 
+													Soft launch is a beta release for select users operating from home and this Launch is meant for experimentation & engagement purpose. 
+													The points, badges & levels will get reset with a prior intimation.
+											  </div>
+											</div>
+										  </div>
+			      		
+									</div> <!-- end of collapse function -->
+								
+								
+							  </div> <!-- end of modal body -->
+							  
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+							  </div>
+							</div>
+						  </div>
+						</div> <!-- end of second modal tab index -->
+
+
+
+			    </div> <!-- end of second col-sm -->
+
+				<div class="col-sm">
+			    	&nbsp;
+			    	<div id="ROG">
+			      		<center> <img src="Rule_of_the_game.svg"> </center>
+			      	</div>
+			      	&nbsp;
+			      	<div class="display-4" style="font-size: 30px;">
+			      	<center id="fsize"> Rules of the Game </center>
+			      	</div>
+			      	&nbsp;
+
+			      	<div class="accordion" id="accordionExample3">
+
+			      		<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading7">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7" style="color: black">
+								   How Points and Badges are earned?
+								</button>
+							  </h2>
+							</div>
+
+							<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample3">
+							  <div class="card-body">
+								Points are earned on basis of preset rules programmed in Game engine for select business imperatives. 
+								Badges are earned on basis of consistency demonstrated for set number of repetitive actions as defined in rule engine.
+								Refer ‘Rules of the Road’ link mentioned below link for details:  <a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+								https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+			  					</div>
+							</div>
+		 			 	</div>
+
+		 			 	<div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading8">
+							  <h2 class="mb-0">
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8" style="color: black;">
+								   How Laps work on EmPower?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample3">
+							  <div class="card-body">
+								The objective of EmPower is to meaningfully engage people and motivate them to drive key business
+								objectives in line with HERE ways of working. EmPower enables to recognize, socialize & celebrate every
+								small/incremental success of individuals using an open & transparent platform.
+							  </div>
+							</div>
+						 </div>
+
+						 <div class="card" style="background-color: #F5F7FA">
+							<div class="card-header" id="heading9">
+							  <h2 class="mb-0" >
+								<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9" 
+								style="color: black; outline: none; border: none; ">
+								   How Levels are defined on EmPower Platform?
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample1">
+							  <div class="card-body">
+									Level configurations on EmPower is inspired from SEA Level of Autonomous car. 
+									Level progression occurs (L0-L1-L2-L3-L4-L5) on completion of 10 Laps for each Level. 
+									Achieving 2300 points on every instance will conclude a single Lap.
+									Refer ‘Rules of the Road’ link mentioned below link for more details: <a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+									https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+							  </div>
+							</div>
+						  </div>
+			      		
+			      	</div> <!-- end of collapse function -->
+			      	&nbsp;
+
+						<!-- Button trigger modal third component Rules of Game -->
+						<center><button id="v3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modtab3">
+						  <b>View All</b>
+						</button></center>
+
+						<!-- Modal -->
+						<div class="modal fade" id="modtab3" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+						  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+							<div class="modal-content" style="background-color: #F5F7FA">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="mod1">Rules of the Game</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  
+							  <div class="modal-body">
+							  
+									<div class="accordion" id="accordionmod3">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapser1" aria-expanded="true" aria-controls="modcollapser1" style="color: black">
+												  How Points and Badges are earned?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="modcollapser1" class="collapse" aria-labelledby="modheadingr1" data-parent="#accordionmod3">
+											  <div class="card-body">
+												Points are earned on basis of preset rules programmed in Game engine for select business imperatives. 
+												Badges are earned on basis of consistency demonstrated for set number of repetitive actions as defined in rule engine. <br> <br>
+												Refer ‘Rules of the Road’ link mentioned below link for details:  <br><a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+												https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a> 
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser2" aria-expanded="false" aria-controls="modcollapser2" style="color: black">
+												  What is ideal time to save Timesheet to get the points
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser2" class="collapse" aria-labelledby="modheadingr2" data-parent="#accordionmod3">
+											  <div class="card-body">
+												Keeping WFH working hours flexibility in mind, exiting rule allows Timesheet to be saved any time between 7am to 11:59pm and still earn points. 
+												However, it is advisable to save Timesheets towards the end of working hours every day to ensure accurate tracking as per the activities performed during the day.
+												<br> <br> Refer ‘Rules of the Road’ link mentioned below link for more details: <br><a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+												https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+												
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser3" aria-expanded="false" aria-controls="modcollapser3" style="color: black">
+												 The rule recommends Weekly Timesheet Submission every Friday - 7am to 11:59pm, what if Friday is a holiday?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser3" class="collapse" aria-labelledby="modheadingr3" data-parent="#accordionmod3">
+											  <div class="card-body">
+													In case of Friday being a holiday, the rule engine is programmed to allow Timesheet submission a day in advance. 
+													Thus, in this scenario, submitting TS on Thursday will still fetch you points. 
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr4">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser4" aria-expanded="false" aria-controls="modcollapser4" style="color: black">
+												  If I am on Planned Leave on Friday, can I submit Timesheet a day in advance?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser4" class="collapse" aria-labelledby="modheadingr4" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Unfortunately, at this point of time, point does not get credited in such scenarios. 
+													EmPower is transparent and unbiased platform driven by preset or programmed rules.
+													The rule applies same for all in such scenarios. 
+													Any update in this rule will be notified in future.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr5">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser5" aria-expanded="false" aria-controls="modcollapser5" style="color: black">
+												  Will a Planned Leave break my streak to earn a Badge?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser5" class="collapse" aria-labelledby="modheadingr5" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Yes, It will. The badge earning streak will automatically get reset to null.
+													Once you resume work, the streak opportunity restarts post earning fresh points that qualifies for badge.
+													<br> <br> Refer ‘Rules of the Road’ link mentioned below link for more details: 
+													<br><a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+												https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr6">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser6" aria-expanded="false" aria-controls="modcollapser6" style="color: black">
+												  How Public Holiday or Weekend Holidays impacts my points or badge earning opportunity?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser6" class="collapse" aria-labelledby="modheadingr6" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Public Holidays and Weekend Holidays are already programmed in backend rule engine. 
+													This will have ‘NO’ impact on points or badge streaks.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr7">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser7" aria-expanded="false" aria-controls="modcollapser7" style="color: black">
+												  When A3 Submit and Approved points are credited into my account?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser7" class="collapse" aria-labelledby="modheadingr7" data-parent="#accordionmod3">
+											  <div class="card-body">
+													As soon as A3 submission and Approval record gets validated & updated in Continual Improvement Team’s database, 
+													EmPower system will publish points next business day.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr8">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser8" aria-expanded="false" aria-controls="modcollapser8" style="color: black">
+												  Would I receive any points or badges for any old Video uploaded on How-To?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser8" class="collapse" aria-labelledby="modheadingr8" data-parent="#accordionmod3">
+											  <div class="card-body">
+													No. You will earn points/badges for any video uploaded post 13th May,2020.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr9">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser9" aria-expanded="false" aria-controls="modcollapser9" style="color: black">
+												  Would I receive points for view old videos available on How-To?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser9" class="collapse" aria-labelledby="modheadingr9" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Yes, you will earn points for viewing any old videos post launch date.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr10">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser10" aria-expanded="false" aria-controls="modcollapser10" style="color: black">
+												  How would I receive points for trainings available on Learning section on EmPower?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser10" class="collapse" aria-labelledby="modheadingr10" data-parent="#accordionmod3">
+											  <div class="card-body">
+													You will be awarded points basis of pre-defined points shown on Learning page catalogue. 
+													Game Administrator selects trainings & defines points on basis of certain criteria derived on basis of business & employee developmental needs.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr11">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser11" aria-expanded="false" aria-controls="modcollapser11" style="color: black">
+												  Would I receive any points or badges for any trainings attended in past that is now available on Learning Page Catalogue?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser11" class="collapse" aria-labelledby="modheadingr11" data-parent="#accordionmod3">
+											  <div class="card-body">
+													In case any posted training available on Learning page catalogue was fully completed after 1st April 2020, you will receive preassigned training points by default. 
+													Retraining is not required.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr12">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser12" aria-expanded="false" aria-controls="modcollapser12" style="color: black">
+												  In case I face a long power outage in my area, would that impact my points or badge?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser12" class="collapse" aria-labelledby="modheadingr12" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Yes, the Rules of the Game may change as the set benchmark evolves. Game administrator will share advance notifications before any change.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr13">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser13" aria-expanded="false" aria-controls="modcollapser13" style="color: black">
+												  How stack ranking is reflected on Leaderboard?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser13" class="collapse" aria-labelledby="modheadingr13" data-parent="#accordionmod3">
+											  <div class="card-body">
+													The Leaderboard shows ONLY Top 10 role models at Team, Department, Location and IDO level.
+													There are multiple filter options available on Leaderboard on basis of individual imperatives and quiz. 
+													The points and badge are also stacked separately and can be viewed using filter options.
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr14">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser14" aria-expanded="false" aria-controls="modcollapser14" style="color: black">
+												  How Laps work on EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="rmodcollapse14" class="collapse" aria-labelledby="rmodheading14" data-parent="#accordionmod3">
+											  <div class="card-body">
+													The entire game experience is designed on Car Race Concept ‘Mumbai – Grand Prix’. 
+													The race circuit connects all HERE Mumbai offices in a circular loop referred as ‘Lap’. 
+													Accumulated points drive your car to subsequent landmark. Once user achieves 2300 points the lap is treated as complete. 
+													Lap starts from Gigaplex connects to SEEPZ, Nesco and finishes back to Gigaplex office.
+													<br> <br> Refer ‘Rules of the Road’ link mentioned below link for more details: 
+													<br><a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+													https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="modheadingr15">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapser15" aria-expanded="false" aria-controls="modcollapser15" style="color: black">
+												  How Levels are defined on EmPower Platform?
+												</button>
+											  </h2>
+											</div>
+											<div id="modcollapser15" class="collapse" aria-labelledby="modheadingr15" data-parent="#accordionmod3">
+											  <div class="card-body">
+													Level configurations on EmPower is inspired from SEA Level of Autonomous car. 
+													Level progression occurs (L0-L1-L2-L3-L4-L5) on completion of 10 Laps for each Level. 
+													Achieving 2300 points on every instance will conclude a single Lap.
+													
+													<br> <br> Refer ‘Rules of the Road’ link mentioned below link for more details: 
+													<br><a href ="https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf">
+													https://empower.in.here.com/static/Rules_of_the_Road_WFH1.pdf </a>
+											  </div>
+											</div>
+										  </div>
+			      		
+									</div> <!-- end of collapse function -->
+								
+								
+							  </div> <!-- end of modal body -->
+							  
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+
+					
+					
+					
+
+
+			    </div> <!-- end of third col-sm -->
+
+
+			 </div> <!-- end of row -->
+			 <br>
+
+
+		  </div>
+
+
+			<!-- Features div elements  -->
+			
+		  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+			<div id="carouselExampleControls" class="carousel slide"  data-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+						
+							<!-- Start of First Feature Col-som -->
+							
+								<div class="col-sm">
+									&nbsp;
+									<div id="GQ">
+										<center> <img src="Home.svg"> </center>
+									</div>
+									&nbsp;
+									<div class="display-4" style="font-size: 30px;">
+									<center id="fsize"> Home Page </center>
+									</div>
+									&nbsp;
+
+									<div class="accordion" id="accordionExamplefhp1">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfhp1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefhp1" aria-expanded="true" aria-controls="collapsefhp1" style="color: black">
+												   What is Happiness meter?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="collapsefhp1" class="collapse" aria-labelledby="headingfhp1" data-parent="#accordionExamplefhp1">
+											  <div class="card-body">
+												Happiness meter checks on a user how do they feel on the given day ranging from ok to very awesome. 
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfhp2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefhp2" aria-expanded="false" aria-controls="collapsefhp2" style="color: black">
+												   What does Slider display?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefhp2" class="collapse" aria-labelledby="headingfhp2" data-parent="#accordionExamplefhp1">
+											  <div class="card-body">
+											  	It displays the ongoing events and updates of the application as well as company.
+												
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfhp3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefhp3" aria-expanded="false" aria-controls="collapsefhp3" style="color: black">
+												   What does the coin signify?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefhp3" class="collapse" aria-labelledby="headingfhp3" data-parent="#accordionExamplefhp1">
+											  <div class="card-body">
+													It shows the cumulative points earned by different imperatives. 
+											  </div>
+											</div>
+										  </div>
+										
+									</div> <!-- end of collapse function -->
+									&nbsp;
+									
+										<!-- Button trigger modal -->
+										<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalhp">
+										  View All
+										</button></center>
+
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalhp" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+										  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+											<div class="modal-content" style="background-color: #F5F7FA">
+											  <div class="modal-header">
+												<h5 class="modal-title" id="mod1"> Home Page </h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												  <span aria-hidden="true">&times;</span>
+												</button>
+											  </div>
+											  
+											  <div class="modal-body">
+											  
+													<div class="accordion" id="accordionmod4">
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp1">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapsehp1" aria-expanded="true" aria-controls="modcollapsehp1" style="color: black">
+																   Who is SAM?
+																</button>
+															  </h2>
+															</div>
+
+															<div id="modcollapsehp1" class="collapse" aria-labelledby="modheadinghp1" data-parent="#accordionmod4">
+															  <div class="card-body">
+																SAM is system automated messages which provides information related to your earned points, earned badges and team members activities. Sam also displays/Nudges you regarding the imperatives that you should do to earn badge.
+
+																</div>
+															</div>
+														</div>
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp2">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp2" aria-expanded="false" aria-controls="modcollapsehp2" style="color: black">
+																   Who is Emmy?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp2" class="collapse" aria-labelledby="modheadinghp2" data-parent="#accordionmod4">
+															  <div class="card-body">
+																Emmy Is engagement manager who will broadcast messages, post events and quizzes for users.
+															  </div>
+															</div>
+														 </div>
+
+														 <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp3">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp3" aria-expanded="false" aria-controls="modcollapsehp3" style="color: black">
+																   What is Happiness meter?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp3" class="collapse" aria-labelledby="modheadinghp3" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	Happiness meter checks on a user how do they feel on the given day ranging from ok to very awesome.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp4">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp4" aria-expanded="false" aria-controls="modcollapsehp4" style="color: black">
+																   Can you upload your desired avatar?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp4" class="collapse" aria-labelledby="modheadinghp4" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	Yes you have option to select your own personal avatar and upload it.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp5">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp5" aria-expanded="false" aria-controls="modcollapsehp5" style="color: black">
+																   Can we add your own personal comment on my feed?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp5" class="collapse" aria-labelledby="modheadinghp5" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	As of now you have pre-defined responses that you can use for commenting.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp6">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp6" aria-expanded="false" aria-controls="modcollapsehp6" style="color: black">
+																   What things you can see in MyFeed?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp6" class="collapse" aria-labelledby="modheadinghp6" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	All messages by SAM and Emmy will be displayed in MyFeed Section.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp7">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp7" aria-expanded="false" aria-controls="modcollapsehp7" style="color: black">
+																   What does Carousel/Slider display?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp7" class="collapse" aria-labelledby="modheadinghp7" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	It displays the ongoing events and updates of the application as well as company.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp8">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp8" aria-expanded="false" aria-controls="modcollapsehp8" style="color: black">
+																   Which Notifications does notification bar displays?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp8" class="collapse" aria-labelledby="modheadinghp8" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	It gives you information regarding the points you earned for the respective imperative, gives you information if someone tagged you in information and also keeps you updated on the upcoming quizzes.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinghp9">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsehp9" aria-expanded="false" aria-controls="modcollapsehp9" style="color: black">
+																   What does the coin signify?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsehp9" class="collapse" aria-labelledby="modheadinghp9" data-parent="#accordionmod4">
+															  <div class="card-body">
+																	It shows the cumulative points earned by different imperatives.
+															  </div>
+															</div>
+														  </div>
+														
+
+													</div> <!-- end of collapse function -->
+												
+												
+											  </div> <!-- end of modal body -->
+											  
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+											  </div>
+											</div>
+										  </div>
+										</div>
+
+
+								</div> <!-- end of first col-sm -->
+								
+								<!-- Start of Second Feature Col-som -->
+								
+								<div class="col-sm">
+									&nbsp;
+									<div id="GQ">
+										<center> <img src="Journey.svg"> </center>
+									</div>
+									&nbsp;
+									<div class="display-4" style="font-size: 30px;">
+									<center id="fsize"> Journey Page </center>
+									</div>
+									&nbsp;
+
+									<div class="accordion" id="accordionExamplefjp1">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfjp1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefjp1" aria-expanded="true" aria-controls="collapsefjp1" style="color: black">
+												   What does Levels mean?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="collapsefjp1" class="collapse" aria-labelledby="headingfjp1" data-parent="#accordionExamplefjp1">
+											  <div class="card-body">
+												It describes the level of automation achieved from L0 to L5 (i.e. from No automation to full automation). 
+												<br>The sequence of levels are as follows:<br>
+												<ul>
+													<li>L0: No Automation</li>
+													<li>L1: Driver Assistance</li>
+													<li>L2: Partial Automation</li>
+													<li>L3: Conditional Automation</li>
+													<li>L4: High Automation</li>
+													<li>L5: Full Automation</li>
+												</ul>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfjp2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefjp2" aria-expanded="false" aria-controls="collapsefjp2" style="color: black">
+												   What is Lap?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefjp2" class="collapse" aria-labelledby="headingfjp2" data-parent="#accordionExamplefjp1">
+											  <div class="card-body">
+												It is a kind of dashboard representing the visual of Laps with landmark and its progress.
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfjp3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefjp3" aria-expanded="false" aria-controls="collapsefjp3" style="color: black">
+												   What is circuit Details?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefjp3" class="collapse" aria-labelledby="headingfjp3" data-parent="#accordionExamplefjp1">
+											  <div class="card-body">
+													It visualizes the below content such as Total Circuit Length/Lap in km, Total Lap Points Number of Pits and Number of Landmark.
+											  </div>
+											</div>
+										  </div>
+										
+									</div> <!-- end of collapse function -->
+									&nbsp;
+									
+										<!-- Button trigger modal -->
+										<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalfjp">
+										  View All
+										</button></center>
+
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalfjp" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+										  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+											<div class="modal-content" style="background-color: #F5F7FA">
+											  <div class="modal-header">
+												<h5 class="modal-title" id="mod1">Jouney Page</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												  <span aria-hidden="true">&times;</span>
+												</button>
+											  </div>
+											  
+											  <div class="modal-body">
+											  
+													<div class="accordion" id="accordionmod5">
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp1">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapsejp1" aria-expanded="true" aria-controls="modcollapsejp1" style="color: black">
+																  What does Levels mean?
+																</button>
+															  </h2>
+															</div>
+
+															<div id="modcollapsejp1" class="collapse" aria-labelledby="modheadingjp1" data-parent="#accordionmod5">
+															  <div class="card-body">
+																It describes the level of automation achieved from L0 to L5 (i.e. from No automation to full automation). 
+																<br>The sequence of levels are as follows:<br>
+																<ul>
+																	<li>L0: No Automation</li>
+																	<li>L1: Driver Assistance</li>
+																	<li>L2: Partial Automation</li>
+																	<li>L3: Conditional Automation</li>
+																	<li>L4: High Automation</li>
+																	<li>L5: Full Automation</li>
+																</ul> 
+
+																</div>
+															</div>
+														</div>
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp2">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsejp2" aria-expanded="false" aria-controls="modcollapsejp2" style="color: black">
+																  What information does the cluster provide?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsejp2" class="collapse" aria-labelledby="modheadingjp2" data-parent="#accordionmod5">
+															  <div class="card-body">
+																It Gives you information Regarding your overall points, Lap count, Current Level and points to next landmark.
+															  </div>
+															</div>
+														 </div>
+
+														 <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp3">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsejp3" aria-expanded="false" aria-controls="modcollapsejp3" style="color: black">
+																  What is Lap?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsejp3" class="collapse" aria-labelledby="modheadingjp3" data-parent="#accordionmod5">
+															  <div class="card-body">
+																	It is a kind of dashboard representing the visual of Laps with landmark and its progress. 
+															  </div>
+															</div>
+														  </div>
+
+														   <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp4">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsejp4" aria-expanded="false" aria-controls="modcollapsejp4" style="color: black">
+																  What does current progress showcase you?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsejp4" class="collapse" aria-labelledby="modheadingjp4" data-parent="#accordionmod5">
+															  <div class="card-body">
+																	It visualizes the level of automation, no. of laps & Next landmark which are currently achieved or completed under level section.
+															  </div>
+															</div>
+														  </div>
+
+														   <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp5">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsejp5" aria-expanded="false" aria-controls="modcollapsejp5" style="color: black">
+																  How can you unlock next level?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsejp5" class="collapse" aria-labelledby="modheadingjp5" data-parent="#accordionmod5">
+															  <div class="card-body">
+																	You can unlock next level on completing the overall laps.
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingjp6">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsejp6" aria-expanded="false" aria-controls="modcollapsejp6" style="color: black">
+																  What is circuit Details?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapsejp6" class="collapse" aria-labelledby="modheadingjp6" data-parent="#accordionmod5">
+															  <div class="card-body">
+																	It visualizes the below content such as Total Circuit Length/Lap in km, Total Lap Points Number of Pits and Number of Landmark.
+															  </div>
+															</div>
+														  </div>
+										
+													</div> <!-- end of collapse function -->
+												
+												
+											  </div> <!-- end of modal body -->
+											  
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+											  </div>
+											</div>
+										  </div>
+										</div>
+
+
+								</div> <!-- end of Second Feature col-sm -->
+								
+								
+								<!-- Start of Third Feature Col-som -->
+				
+				
+										<div class="col-sm">
+											&nbsp;
+											<div id="GQ">
+												<center> <img src="Achievements.svg"> </center>
+											</div>
+											&nbsp;
+											<div class="display-4" style="font-size: 30px;">
+											<center id="fsize">Achievements</center>
+											</div>
+											&nbsp;
+
+											<div class="accordion" id="accordionExamplefa1">
+
+												<div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfa1">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefa1" aria-expanded="true" aria-controls="collapsefa1" style="color: black">
+														  When can you earn a badge?
+														</button>
+													  </h2>
+													</div>
+
+													<div id="collapsefa1" class="collapse" aria-labelledby="headingfa1" data-parent="#accordionExamplefa1">
+													  <div class="card-body">
+														When you achieve an imperative successfully for consecutive days and time you can earn a badge.
+
+														</div>
+													</div>
+												</div>
+
+												<div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfa2">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefa2" aria-expanded="false" aria-controls="collapsefa2" style="color: black">
+														  What does Progress section display?
+														</button>
+													  </h2>
+													</div>
+													<div id="collapsefa2" class="collapse" aria-labelledby="headingfa2" data-parent="#accordionExamplefa1">
+													  <div class="card-body">
+														It tracks the progress in terms of total points and badges earned in different KPI/Imperative which are merged in Empower.
+													  </div>
+													</div>
+												 </div>
+
+												 <div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfa3">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefa3" aria-expanded="false" aria-controls="collapsefa3" style="color: black">
+														 What does Timeline display?
+														</button>
+													  </h2>
+													</div>
+													<div id="collapsefa3" class="collapse" aria-labelledby="headingfa3" data-parent="#accordionExamplefa1">
+													  <div class="card-body">
+															Timeline shows the history of points earned by imperative in a sorted manner.
+													  </div>
+													</div>
+												  </div>
+												
+											</div> <!-- end of collapse function -->
+											&nbsp;
+											
+												<!-- Button trigger modal -->
+												<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalfa">
+												  View All
+												</button></center>
+
+												<!-- Modal -->
+												<div class="modal fade" id="exampleModalfa" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+												  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+													<div class="modal-content" style="background-color: #F5F7FA">
+													  <div class="modal-header">
+														<h5 class="modal-title" id="mod1">Achievements</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														  <span aria-hidden="true">&times;</span>
+														</button>
+													  </div>
+													  
+													  <div class="modal-body">
+													  
+															<div class="accordion" id="accordionmod6">
+
+																<div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa1">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapsefa1" aria-expanded="true" aria-controls="modcollapsefa1" style="color: black">
+																		  When can you earn a badge?
+																		</button>
+																	  </h2>
+																	</div>
+
+																	<div id="modcollapsefa1" class="collapse" aria-labelledby="modheadingfa1" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																		When you achieve an imperative successfully for consecutive days and time you can earn a badge.
+
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa2">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefa2" aria-expanded="false" aria-controls="modcollapsefa2" style="color: black">
+																		  What does Progress section display?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefa2" class="collapse" aria-labelledby="modheadingfa2" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																		It tracks the progress in terms of total points and badges earned in different KPI/Imperative which are merged in Empower.
+																	  </div>
+																	</div>
+																 </div>
+
+																 <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa3">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefa3" aria-expanded="false" aria-controls="modcollapsefa3" style="color: black">
+																		  What does Timeline display?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefa3" class="collapse" aria-labelledby="modheadingfa3" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																			Timeline shows the history of points earned by imperative in a sorted manner.
+																	  </div>
+																	</div>
+																  </div>
+
+																  <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa4">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefa4" aria-expanded="false" aria-controls="modcollapsefa4" style="color: black">
+																		  Will there be more Imperative/KPI added?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefa4" class="collapse" aria-labelledby="modheadingfa4" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																		Yes as goes we will be adding more Imperatives by which you can earn points.
+																	  </div>
+																	</div>
+																  </div>
+
+																  <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa5">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefa5" aria-expanded="false" aria-controls="modcollapsefa5" style="color: black">
+																		  How can you Earn points by different imperatives?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefa5" class="collapse" aria-labelledby="modheadingfa5" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																		Refer to rules of the game on top bar section where you can find the rules and how to earn the points.
+																	  </div>
+																	</div>
+																  </div>
+
+																  <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfa6">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefa6" aria-expanded="false" aria-controls="modcollapsefa6" style="color: black">
+																		  What does HERE Core values signify here?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefa6" class="collapse" aria-labelledby="modheadingfa6" data-parent="#accordionmod6">
+																	  <div class="card-body">
+																		THE HERE core value acts as an appreciation factor. If any user achieves something or performs up to the mark, then a manager can appreciate him/her with the corresponding HERE value badge
+																	  </div>
+																	</div>
+																  </div>
+												
+															</div> <!-- end of collapse function -->
+														
+														
+													  </div> <!-- end of modal body -->
+													  
+													  <div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+													  </div>
+													</div>
+												  </div>
+												</div>
+
+
+										</div> <!-- end of third feature col-sm -->
+						
+						</div> <!-- End of First Feature row -->
+					
+					
+					</div>  <!-- End of First div element -->
+					
+					
+					<div class="carousel-item">
+					
+						<div class="row">
+						
+							<!-- Start of Second row Feature first Col-som -->
+							
+								<div class="col-sm">
+									&nbsp;
+									<div id="GQ">
+										<center> <img src="Learning.svg"> </center>
+									</div>
+									&nbsp;
+									<div class="display-4" style="font-size: 30px;">
+									<center id="fsize"> Learning Page </center>
+									</div>
+									&nbsp;
+
+									<div class="accordion" id="accordionExamplefl1">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfl1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefl1" aria-expanded="true" aria-controls="collapsefl1" style="color: black">
+												  Why there is a slider in learning as well?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="collapsefl1" class="collapse" aria-labelledby="headingfl1" data-parent="#accordionExamplefl1">
+											  <div class="card-body">
+												This slider/Carousel displays information about the trainings available.
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfl2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefl2" aria-expanded="false" aria-controls="collapsefl2" style="color: black">
+												  Can we take multiple trainings and earn points?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefl2" class="collapse" aria-labelledby="headingfl2" data-parent="#accordionExamplefl1">
+											  <div class="card-body">
+												Yes you can take all the trainings that are available on learning section.
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingfl3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefl3" aria-expanded="false" aria-controls="collapsefl3" style="color: black">
+												  How can we earn points by taking trainings?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapsefl3" class="collapse" aria-labelledby="headingfl3" data-parent="#accordionExamplefl1">
+											  <div class="card-body">
+												Once you complete the training you shall be awarded points that are mentioned.
+											  </div>
+											</div>
+										  </div>
+										
+									</div> <!-- end of collapse function -->
+									&nbsp;
+									
+										<!-- Button trigger modal -->
+										<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalflp">
+										  View All
+										</button></center>
+
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalflp" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+										  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+											<div class="modal-content" style="background-color: #F5F7FA">
+											  <div class="modal-header">
+												<h5 class="modal-title" id="mod1">Learning Page</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												  <span aria-hidden="true">&times;</span>
+												</button>
+											  </div>
+											  
+											  <div class="modal-body">
+											  
+													<div class="accordion" id="accordionmod7">
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinglp1">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapselp1" aria-expanded="true" aria-controls="modcollapselp1" style="color: black">
+																  Why there is a slider/Carousel in learning as well?
+																</button>
+															  </h2>
+															</div>
+
+															<div id="modcollapselp1" class="collapse" aria-labelledby="modheadinglp1" data-parent="#accordionmod7">
+															  <div class="card-body">
+																This slider/Carousel displays information about the trainings available. 
+
+																</div>
+															</div>
+														</div>
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinglp2">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapselp2" aria-expanded="false" aria-controls="modcollapselp2" style="color: black">
+																  Can we take trainings outside the website and earn points?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapselp2" class="collapse" aria-labelledby="modheadinglp2" data-parent="#accordionmod7">
+															  <div class="card-body">
+																No, only trainings available in learning section can be taken to earn points. The trainings are posted by the admin.
+															  </div>
+															</div>
+														 </div>
+
+														 <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinglp3">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapselp3" aria-expanded="false" aria-controls="modcollapselp3" style="color: black">
+																  Can we take multiple trainings and earn points?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapselp3" class="collapse" aria-labelledby="modheadinglp3" data-parent="#accordionmod7">
+															  <div class="card-body">
+																	Yes you can take all the trainings that are available on learning section. 
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadinglp4">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapselp4" aria-expanded="false" aria-controls="modcollapselp4" style="color: black">
+																  How can we earn points by taking trainings?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapselp4" class="collapse" aria-labelledby="modheadinglp4" data-parent="#accordionmod7">
+															  <div class="card-body">
+																	Once you complete the training you shall be awarded points that are mentioned. 
+															  </div>
+															</div>
+														  </div>
+										
+													</div> <!-- end of collapse function -->
+												
+												
+											  </div> <!-- end of modal body -->
+											  
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+											  </div>
+											</div>
+										  </div>
+										</div>
+
+
+								</div> <!-- end of first col-sm -->
+								
+								<!-- Start of Second Feature Col-som -->
+								
+								<div class="col-sm">
+									&nbsp;
+									<div id="GQ">
+										<center> <img src="Leader_board1.svg"> </center>
+									</div>
+									&nbsp;
+									<div class="display-4" style="font-size: 30px;">
+									<center id="fsize"> Leaderboard </center>
+									</div>
+									&nbsp;
+
+									<div class="accordion" id="accordionExampleflb1">
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingflb1">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseflb1" aria-expanded="true" aria-controls="collapseflb1" style="color: black">
+												  What is leaderboard section display?
+												</button>
+											  </h2>
+											</div>
+
+											<div id="collapseflb1" class="collapse" aria-labelledby="headingflb1" data-parent="#accordionExampleflb1">
+											  <div class="card-body">
+												Displays the current standing of top 10 users with highest points in your Team, Entire company department and location. 
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingflb2">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseflb2" aria-expanded="false" aria-controls="collapseflb2" style="color: black">
+												  I cannot see my name in leaderboard?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapseflb2" class="collapse" aria-labelledby="headingflb2" data-parent="#accordionExampleflb1">
+											  <div class="card-body">
+												Only top 10 users who have earned maximum points will be displayed in leaderboard.
+											  </div>
+											</div>
+										 </div>
+
+										 <div class="card" style="background-color: #F5F7FA">
+											<div class="card-header" id="headingflb3">
+											  <h2 class="mb-0">
+												<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseflb3" aria-expanded="false" aria-controls="collapseflb3" style="color: black">
+												  Can I see points of earned last month and also points based on different imperatives?
+												</button>
+											  </h2>
+											</div>
+											<div id="collapseflb3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExampleflb1">
+											  <div class="card-body">
+													Yes you have Filter Option which displays varies filters such as selection of time period in which user got points, KPI wise filter like Timesheet, MyWorkAnalzyer etc. 
+											  </div>
+											</div>
+										  </div>
+										
+									</div> <!-- end of collapse function -->
+									&nbsp;
+									
+										<!-- Button trigger modal -->
+										<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalflb">
+										  View All
+										</button></center>
+
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalflb" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+										  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+											<div class="modal-content" style="background-color: #F5F7FA">
+											  <div class="modal-header">
+												<h5 class="modal-title" id="mod1">Leaderboard</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												  <span aria-hidden="true">&times;</span>
+												</button>
+											  </div>
+											  
+											  <div class="modal-body">
+											  
+													<div class="accordion" id="accordionmod8">
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingflb1">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapseflb1" aria-expanded="true" aria-controls="modcollapseflb1" style="color: black">
+																  What is leaderboard section display?
+																</button>
+															  </h2>
+															</div>
+
+															<div id="modcollapseflb1" class="collapse" aria-labelledby="modheadingflb1" data-parent="#accordionmod8">
+															  <div class="card-body">
+																Displays the current standing of top 10 users with highest points in your Team, Entire company department and location.
+
+																</div>
+															</div>
+														</div>
+
+														<div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingflb2">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapseflb2" aria-expanded="false" aria-controls="modcollapseflb2" style="color: black">
+																  I cannot see my name in leaderboard?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapseflb2" class="collapse" aria-labelledby="modheadingflb2" data-parent="#accordionmod8">
+															  <div class="card-body">
+																Only top 10 users who have earned maximum points will be displayed in leaderboard.
+															  </div>
+															</div>
+														 </div>
+
+														 <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingflb3">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapseflb3" aria-expanded="false" aria-controls="modcollapseflb3" style="color: black">
+																  Can I see points of earned last month and also points based on different imperatives?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapseflb3" class="collapse" aria-labelledby="modheadingflb3" data-parent="#accordionmod8">
+															  <div class="card-body">
+																	Yes you have Filter Option which displays varies filters such as selection of time period in which user got points, KPI wise filter like Timesheet, MyWorkAnalzyer etc. 
+															  </div>
+															</div>
+														  </div>
+
+														  <div class="card" style="background-color: #F5F7FA">
+															<div class="card-header" id="modheadingflb4">
+															  <h2 class="mb-0">
+																<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapseflb4" aria-expanded="false" aria-controls="modcollapseflb4" style="color: black">
+																  Where can we see badges earned by my or other team members/ Can we see badges earned by others?
+																</button>
+															  </h2>
+															</div>
+															<div id="modcollapseflb4" class="collapse" aria-labelledby="modheadingflb4" data-parent="#accordionmod8">
+															  <div class="card-body">
+																	Yes you can see how many badges have been earned by team as well as other users in the dropdown section besides filter.
+															  </div>
+															</div>
+														  </div>
+										
+													</div> <!-- end of collapse function -->
+												
+												
+											  </div> <!-- end of modal body -->
+											  
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+											  </div>
+											</div>
+										  </div>
+										</div>
+
+
+								</div> <!-- end of Second Feature col-sm -->
+								
+								
+								<!-- Start of Third Feature Col-som -->
+				
+				
+										<div class="col-sm">
+											&nbsp;
+											<div id="GQ">
+												<center> <img src="Events2.svg"> </center>
+											</div>
+											&nbsp;
+											<div class="display-4" style="font-size: 30px;">
+											<center id="fsize"> Events & Quiz </center>
+											</div>
+											&nbsp;
+
+											<div class="accordion" id="accordionExamplefqe1">
+
+												<div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfqe1">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefqe1" aria-expanded="true" aria-controls="collapsefqe1" style="color: black">
+														  Can I get more detailed information of the upcoming event?
+														</button>
+													  </h2>
+													</div>
+
+													<div id="collapsefqe1" class="collapse" aria-labelledby="headingfqe1" data-parent="#accordionExamplefqe1">
+													  <div class="card-body">
+														Yes, all the information regarding the date, time and place of event will be available.
+
+														</div>
+													</div>
+												</div>
+
+												<div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfqe2">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefqe2" aria-expanded="false" aria-controls="collapsefqe2" style="color: black">
+														  Can I attempt all the quizzes that are available?
+														</button>
+													  </h2>
+													</div>
+													<div id="collapsefqe2" class="collapse" aria-labelledby="headingfqe2" data-parent="#accordionExamplefqe1">
+													  <div class="card-body">
+														Yes, all the quizzes that are displayed in this section can be attempted by user.
+													  </div>
+													</div>
+												 </div>
+
+												 <div class="card" style="background-color: #F5F7FA">
+													<div class="card-header" id="headingfqe3">
+													  <h2 class="mb-0">
+														<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefqe3" aria-expanded="false" aria-controls="collapsefqe3" style="color: black">
+														  Can I earn points for answering the right question?
+														</button>
+													  </h2>
+													</div>
+													<div id="collapsefqe3" class="collapse" aria-labelledby="headingfqe3" data-parent="#accordionExamplefqe1">
+													  <div class="card-body">
+															No, you do not earn points for attempting the quiz. But if you attempt the quiz and answer it right you can see your name in the leaderboard for the rightest questions answered.
+													  </div>
+													</div>
+												  </div>
+												
+											</div> <!-- end of collapse function -->
+											&nbsp;
+											
+												<!-- Button trigger modal -->
+												<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalfqe">
+												  View All
+												</button></center>
+
+												<!-- Modal -->
+												<div class="modal fade" id="exampleModalfqe" tabindex="-1" role="dialog" aria-labelledby="modl" aria-hidden="true" >
+												  <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+													<div class="modal-content" style="background-color: #F5F7FA">
+													  <div class="modal-header">
+														<h5 class="modal-title" id="mod1">Events & Quiz</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														  <span aria-hidden="true">&times;</span>
+														</button>
+													  </div>
+													  
+													  <div class="modal-body">
+													  
+															<div class="accordion" id="accordionmod9">
+
+																<div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe1">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#modcollapsefqe1" aria-expanded="true" aria-controls="modcollapsefqe1" style="color: black">
+																		  Which events are posted in this section/ What does event section display?
+																		</button>
+																	  </h2>
+																	</div>
+
+																	<div id="modcollapsefqe1" class="collapse" aria-labelledby="modheadingfqe1" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																		This is the section where users can see all the events (like Company Events, Festival, Events etc), whether they are upcoming event, ongoing or past event. 
+
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe2">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe2" aria-expanded="false" aria-controls="modcollapsefqe2" style="color: black">
+																		  Can I get more detailed information of the upcoming event?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe2" class="collapse" aria-labelledby="modheadingfqe2" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																		Yes, all the information regarding the date, time and place of event will be available.
+																	  </div>
+																	</div>
+																 </div>
+
+																 <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe3">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe3" aria-expanded="false" aria-controls="modcollapsefqe3" style="color: black">
+																		  Can I attempt all the quizzes that are available?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe3" class="collapse" aria-labelledby="modheadingfqe3" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			Yes, all the quizzes that are displayed in this section can be attempted by user. 
+																	  </div>
+																	</div>
+																  </div>
+																	
+																	<div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe4">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe4" aria-expanded="false" aria-controls="modcollapsefqe4" style="color: black">
+																		  Can I check if I have missed any quiz?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe4" class="collapse" aria-labelledby="modheadingfqe4" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			Yes, you can check all the quiz that you have missed in the past quizzes. 
+																	  </div>
+																	</div>
+																  </div>
+
+																  <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe5">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe5" aria-expanded="false" aria-controls="modcollapsefqe5" style="color: black">
+																		  Can I attempt all the quizzes that are available?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe5" class="collapse" aria-labelledby="modheadingfqe5" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			Yes, all the quizzes that are displayed in this section can be attempted by user. 
+																	  </div>
+																	</div>
+																  </div>
+
+																  <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe6">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe6" aria-expanded="false" aria-controls="modcollapsefqe6" style="color: black">
+																		  Will I be available to see the quizzes that I have attempted?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe6" class="collapse" aria-labelledby="modheadingfqe6" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			Yes, all the quizzes which you have attempted and the details of it will be seen in the past quizzes.
+																	  </div>
+																	</div>
+																  </div>
+
+																   <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe7">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe7" aria-expanded="false" aria-controls="modcollapsefqe7" style="color: black">
+																		  Can I attempt the quiz anytime?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe7" class="collapse" aria-labelledby="modheadingfqe7" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			NO, there is a specific date and time when the quiz starts. At that given time and date you can only attempt the quiz.
+																	  </div>
+																	</div>
+																  </div>
+
+																   <div class="card" style="background-color: #F5F7FA">
+																	<div class="card-header" id="modheadingfqe8">
+																	  <h2 class="mb-0">
+																		<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#modcollapsefqe8" aria-expanded="false" aria-controls="modcollapsefqe8" style="color: black">
+																		  Can I earn points for answering the right question?
+																		</button>
+																	  </h2>
+																	</div>
+																	<div id="modcollapsefqe8" class="collapse" aria-labelledby="modheadingfqe8" data-parent="#accordionmod9">
+																	  <div class="card-body">
+																			No, you do not earn points for attempting the quiz. But if you attempt the quiz and answer it right you can see your name in the leaderboard for the rightest questions answered.
+																	  </div>
+																	</div>
+																  </div>
+															</div> <!-- end of collapse function -->
+														
+														
+													  </div> <!-- end of modal body -->
+													  
+													  <div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+													  </div>
+													</div>
+												  </div>
+												</div>
+
+
+										</div> <!-- end of third feature col-sm -->
+						
+						</div> <!-- End of Second Feature row -->
+					  
+					  
+					</div>  <!-- End of Second div element -->
+					
+
+					
+				  </div>
+				  
+
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+			</div>
+
+
+
+
+		  </div>
+		 
+		</div>
+
+	</div>	
+	&nbsp;
+	<br>
+
+	</div> <!-- end of container -->
+
+
+		<!-- Webpage Footer -->
+		<footer class="page-footer" style="background-color: black; width: 100%;">
+
+			<div class="text-center center-block" id="flinks">
+                <a style="color: white;" href="https://legal.here.com/en-gb/privacy/cookie-policy" target="_blank">Privacy & Policy</a>&nbsp;&nbsp;
+	            <a style="color: white;" href="https://legal.here.com/en-gb/terms" target="_blank">Terms & Conditions</a>&nbsp;&nbsp;
+	            <a style="color: white;" href="mailto:empowersupport@here.com" target="_blank">Contact Us</a>
+
+			</div>
+
+			 <div class="text-center center-block" id="sm">
+                <a href="https://www.facebook.com/here" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/HERE" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://www.youtube.com/user/heremaps" target="_blank"><i id="social-yt" class="fa fa-youtube-play fa-3x social"></i></a>
+	            <a href="https://www.linkedin.com/company/here/" target="_blank"><i id="social-li" class="fa fa-linkedin-square fa-3x social"></i></a>
+			</div>
+
+		  <!-- Copyright -->
+		  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+		    <a href="https://empower.in.here.com/" style="color: white;"><b> EMPOWER </b></a>
+		  </div>
+		  <!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+
+		<!-- spinwheel script -->
+		<script src="main.js"></script>
+
+		<!-- Components JS code  -->
+		<script type="text/javascript">
+
+			$('h5').on('click', function(){
+		    $('h5').removeClass('selected');
+		    $(this).addClass('selected');
+		});
+
+
+			/*document.getElementById('nav-home-tab').addEventListener
+				('click', change_color);
+
+			function change_color(){ 
+ 				document.body.style.color = "red";
+ 			}*/
+
+ 			/*
+			 $('h5').on('click', function(){
+		    $('h5').removeClass('comp');
+		    $(this).addClass('comp');
+		}); */
+
+		//java script code set time limit
+			var clock1; 
+			$(document).ready(function() {
+			    // Grab the current date 
+			    var currentDate = new Date(); 
+			    // Set some date in the future. ***change to desired date***
+			    //var futureDate = new Date(2014, 11, 23, 6, 0, 0); 
+			    var futureDate = new Date(2020, 8, 14, 9, 0, 0); //fixed as per comments
+			    // Calculate the difference in seconds between the future and current date 
+			    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000; 
+			    // Instantiate a coutdown FlipClock 
+			    clock1 = $('.clock1').FlipClock(diff, { clockFace: 'DailyCounter', countdown: true }); 
+			});
+
+
+			$(document).ready(function(){
+			  var docEl = $(document),
+			      headerEl = $('header'),
+			      headerWrapEl = $('.wrapHead'),
+			      navEl = $('nav'),
+			      linkScroll = $('.scroll');
+			  
+			  docEl.on('scroll', function(){
+			    if ( docEl.scrollTop() > 160 ){
+			      headerEl.addClass('fixed-to-top');
+			      headerWrapEl.addClass('fixed-to-top');
+			      navEl.addClass('fixed-to-top');
+			    }
+			    else {
+			      headerEl.removeClass('fixed-to-top');
+			      headerWrapEl.removeClass('fixed-to-top');
+			      navEl.removeClass('fixed-to-top');
+			    }
+			  });
+			  
+			  linkScroll.click(function(e){
+			      e.preventDefault();
+			      $('body, html').animate({
+			         scrollTop: $(this.hash).offset().top
+			      }, 500);
+			   });
+			});
+
+		</script>
+
+
+
+	
+	
+</body>
+
+
+</html>

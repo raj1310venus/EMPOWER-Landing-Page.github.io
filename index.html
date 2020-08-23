@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wheel of Fortune Bingo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="main.css"> 
+      <link rel="stylesheet" href="quiz.css">
+    
+</head>
+<body>
+    <div class="container-fluid" style="background: grey; padding-bottom: 50px; margin-left: 0px;">
+        <div class="row">
+           
+            <div  class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <img id="img1" src="Spinwheel.png">
+                <div id="chart">
+                    <img id="img2" src="12.png">
+                     <img id="img3" src="spincenter.png">  
+                     <img id="rotateimg" src="png-1.png">
+                </div>
+              
+              <div>
+                  <button id="btn2" onclick="spin()"><img id="img4" src="taptospin.png"> </button>
+              </div>
+            </div>
+            <div class="class=col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="Question" >
+                        </button> <h3 id="p1"></h3><button id="btn1" onclick="start()"> 
+                    </div>
+                    </div>                    
+                </div>                    
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="container1">
+                                <h1 id="heading">BADGES</h1>
+                                <br/>
+                            <div id="quiz"></div>
+                            <div class="button" id="next"><a href="#">Next</a></div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <!-- <script src="quiz.js"></script> -->
+    <script type="text/javascript"></script>
+    
+
+    
+
+</body>
+</html>
